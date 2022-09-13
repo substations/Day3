@@ -27,6 +27,7 @@ public class ViewController implements View.OnClickListener, SeekBar.OnSeekBarCh
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser){
         progressText.setText("" + progress);
+
     }
 
     @Override
@@ -38,6 +39,7 @@ public class ViewController implements View.OnClickListener, SeekBar.OnSeekBarCh
     public void onStopTrackingTouch(SeekBar seekBar) {
 
     }
+
 }
 
 
