@@ -28,11 +28,8 @@
 
             <Button
                 android:id="@+id/helloButton"
-                android:layout_width="20dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:maxWidth="50dp"
-                android:minWidth="50dp"
                 android:text="Say Hello" />
 
             <Space
@@ -41,13 +38,20 @@
                 android:layout_weight="2" />
 
             <Button
-                android:id="@+id/goodbyeButton"
-                android:layout_width="20dp"
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:width="30dp"
-                android:maxWidth="50dp"
-                android:minWidth="50dp"
+                android:text="toggle" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/goodbyeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Say Goodbye" />
 
         </LinearLayout>

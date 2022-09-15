@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         Button helloButton = findViewById(R.id.helloButton);
         helloButton.setOnClickListener(viewController);
 
+        Button toggleButton = findViewById(R.id.toggleButton);
+        toggleButton.setOnClickListener(surfaceView);
+
         SeekBar seekBar = findViewById(R.id.progress);
         seekBar.setOnSeekBarChangeListener(surfaceView);
 
