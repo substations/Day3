@@ -28,6 +28,8 @@ public class MySurfaceView extends SurfaceView implements SeekBar.OnSeekBarChang
     protected void onDraw(Canvas canvas){
         //DO NOT allocate anything in this method, memory use optimization
         bigSpot.draw(canvas);
+
+
     }
 
     @Override
@@ -35,6 +37,7 @@ public class MySurfaceView extends SurfaceView implements SeekBar.OnSeekBarChang
         bigSpot.setRadius(progress);
         progressText.setText(""+progress);
         invalidate();       //tell surfaceview that old view is no longer valid, should redraw
+
     }
 
     @Override
@@ -47,11 +50,9 @@ public class MySurfaceView extends SurfaceView implements SeekBar.OnSeekBarChang
 
     }
 
-    //
+
     public void setProgressText(TextView progressText){
         this.progressText = progressText;
     }
-    //
-
 
 }
