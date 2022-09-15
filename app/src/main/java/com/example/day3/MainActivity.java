@@ -18,25 +18,20 @@ public class MainActivity extends AppCompatActivity {
         TextView helloText = findViewById(R.id.hello);
         TextView progressText = findViewById(R.id.progressText);
 
-
-        //attach progressText to surfaceView
         MySurfaceView surfaceView = findViewById(R.id.surfaceView);
-        surfaceView.setProgressText(progressText);
 
-        SeekBar seekBar = findViewById(R.id.progress);
-        seekBar.setOnSeekBarChangeListener(surfaceView);
-
-
-        //attach hello and goodbye buttons to viewcontroller
         ViewController viewController = new ViewController(helloText, progressText);
 
+        surfaceView.setProgressText(progressText);
+        //find view
         Button goodbyeButton = findViewById(R.id.goodbyeButton);
         goodbyeButton.setOnClickListener(viewController);
 
         Button helloButton = findViewById(R.id.helloButton);
         helloButton.setOnClickListener(viewController);
 
-
+        SeekBar seekBar = findViewById(R.id.progress);
+        seekBar.setOnSeekBarChangeListener(surfaceView);
 
 
 
