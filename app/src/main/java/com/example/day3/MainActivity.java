@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         TextView progressText = findViewById(R.id.progressText);
 
         MySurfaceView surfaceView = findViewById(R.id.surfaceView);
+        surfaceView.setOnTouchListener(surfaceView);
+        surfaceView.setProgressText(progressText);
 
         ViewController viewController = new ViewController(helloText, progressText);
 
-        surfaceView.setProgressText(progressText);
-        //find view
         Button goodbyeButton = findViewById(R.id.goodbyeButton);
         goodbyeButton.setOnClickListener(viewController);
 
@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         SeekBar seekBar = findViewById(R.id.progress);
         seekBar.setOnSeekBarChangeListener(surfaceView);
-
-
 
     }
 }
